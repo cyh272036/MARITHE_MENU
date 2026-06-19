@@ -326,9 +326,6 @@ body {
   padding: 1.2rem;
   min-height: 0;
 }
-.panel-img + .panel-img {
-  filter: brightness(0.88);
-}
 .panel-img-label {
   font-size: 0.72rem;
   text-transform: uppercase;
