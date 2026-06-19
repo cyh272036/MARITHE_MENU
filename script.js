@@ -5,8 +5,11 @@ let activeMenu = null;
 // ── GNB 호버 → 메가 메뉴 오픈 ────────────────────────────
 document.querySelectorAll('.gnb-item').forEach(gnbItem => {
   const key = gnbItem.dataset.menu;
-  const mega = header.querySelector(`.mega[data-mega="${key}"]`);
-  if (!mega) return;
+  const mega = key ? header.querySelector(`.mega[data-mega="${key}"]`) : null;
+  if (!mega) {
+    gnbItem.addEventListener('mouseenter', closeMega);
+    return;
+  }
 
   gnbItem.addEventListener('mouseenter', () => {
     openMega(gnbItem, mega);
