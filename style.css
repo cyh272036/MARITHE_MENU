@@ -144,7 +144,7 @@ body {
     opacity var(--mega-speed) ease;
 }
 .mega.is-open {
-  max-height: 402px;
+  max-height: 560px;
   opacity: 1;
   pointer-events: all;
 }
@@ -301,6 +301,7 @@ body {
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
+  align-self: flex-start;
 }
 
 /* 여성/남성/키즈 — 공통 이미지 구조 */
@@ -317,6 +318,7 @@ body {
   width: 500px;
   height: 400px;
   grid-column: unset;
+  align-self: flex-start;
 }
 .panel-img {
   flex: 1;
