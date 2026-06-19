@@ -152,8 +152,6 @@ body {
 .mega-inner {
   display: grid;
   grid-template-columns: 220px 1fr;
-  max-width: 1440px;
-  margin: 0 auto;
   min-height: 524px;
 }
 
