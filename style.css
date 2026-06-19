@@ -199,6 +199,7 @@ body {
 /* ==================== Mega Right ==================== */
 .mega-right {
   position: relative;
+  overflow: hidden;
 }
 
 /* ==================== Panel ==================== */
@@ -306,9 +307,11 @@ body {
 .mega-right--shared {
   display: grid;
   grid-template-columns: 1fr 680px;
+  grid-template-rows: 1fr;
 }
 .mega-panels-wrap {
   position: relative;
+  min-height: 360px;
 }
 .mega-right--shared .panel-imgs {
   width: auto;
