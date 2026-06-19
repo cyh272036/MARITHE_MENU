@@ -210,19 +210,3 @@ if (sliderTrack) {
     resetTimer();
   }, { passive: true });
 }
-
-// ── 공통 패널 템플릿 주입 (GYJ / NYF) ────────────────────
-const GYJ_COLS = `<div class="panel-cols"><div class="pcol"><a href="#">착장 아이템</a><a href="#">컬렉션 전체</a></div></div>`;
-const GYJ_IMGS = `<div class="panel-imgs"><div class="panel-img" style="background:#111;"><span class="panel-img-label" style="color:#fff;">GO YOUN-JUNG</span></div><div class="panel-img" style="background:#1A1A1A;"><span class="panel-img-label" style="color:#fff;">LOOK BOOK</span></div></div>`;
-const NYF_COLS = `<div class="panel-cols"><div class="pcol"><a href="#">패밀리 룩</a><a href="#">아이템 전체</a></div></div>`;
-const NYF_IMGS = `<div class="panel-imgs"><div class="panel-img" style="background:#1E1E1E;"><span class="panel-img-label" style="color:#fff;">NA YOUNG FAMILY</span></div><div class="panel-img" style="background:#282828;"><span class="panel-img-label" style="color:#fff;">FAMILY LOOK</span></div></div>`;
-
-document.querySelectorAll('[data-panel$="-gyj"]').forEach(panel => {
-  const isShared = panel.closest('.mega-right--shared') !== null;
-  panel.innerHTML = GYJ_COLS + (isShared ? '' : GYJ_IMGS);
-});
-
-document.querySelectorAll('[data-panel$="-nyf"]').forEach(panel => {
-  const isShared = panel.closest('.mega-right--shared') !== null;
-  panel.innerHTML = NYF_COLS + (isShared ? '' : NYF_IMGS);
-});
