@@ -159,7 +159,7 @@ body {
 
 /* ==================== Left Nav ==================== */
 .mega-left {
-  padding: 2.5rem 0 2.5rem 2rem;
+  padding: 2.5rem 0 2.5rem 50px;
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
