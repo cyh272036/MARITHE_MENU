@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(head -n 838 /Users/choeyunhwa/MARITHE_MENU/index.html)",
+      "Bash(mv /tmp/index_clean.html /Users/choeyunhwa/MARITHE_MENU/index.html)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh-keygen -t ed25519 -C \"cyh272036@gmail.com\" -f ~/.ssh/id_ed25519 -N \"\")",
+      "Bash(cat ~/.ssh/id_ed25519.pub)",
+      "Read(//Users/choeyunhwa/.ssh/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://cyh272036.github.io/MARITHE_MENU)",
+      "Bash(curl -sI -L https://cyh272036.github.io/MARITHE_MENU/)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
+    ]
+  }
+}
